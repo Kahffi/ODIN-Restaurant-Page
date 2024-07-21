@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:100,300,400");
+/* @import url("assets/fonts/AromaticDreamDemo.otf"); */
+
+:root {
+	--dark: #121618;
+	--yellow: #ffc851;
+}
+* {
+	font-family: montserrat, Roboto, Verdana, sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 18px;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	min-height: 100dvh;
+}
+
+#content {
+	flex: 1;
+	display: flex;
+}
+
+.navbar .logo-container {
+	display: flex;
+	color: white;
+	align-items: center;
+}
+
+#restaurant-logo {
+	width: clamp(30px, 13vw, 80px);
+	height: auto;
+}
+
+.buttons-container {
+	display: flex;
+	gap: clamp(10px, 50vw, 20px);
+}
+
+header nav {
+	display: flex;
+	align-items: center;
+	background-color: var(--dark);
+	padding: 10px 25px;
+	justify-content: space-between;
+}
+
+.navbar button.default {
+	font-size: 1.3rem;
+	outline: 0;
+	border: 0;
+	color: var(--yellow);
+	background: none;
+	cursor: pointer;
+}
+
+.navbar button.default:hover,
+.navbar button.active {
+	color: white;
+	transform: scale(1.1);
+}
+
+.navbar button.default:active {
+	transform: scale(0.95);
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+}
+
+footer ul li {
+	list-style: none;
+	float: left;
+}
+
+footer ul li a {
+	text-decoration: none;
+}
+
+/* home page css */
+.home-page {
+	background-color: #121618;
+}

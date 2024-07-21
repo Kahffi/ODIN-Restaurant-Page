@@ -6,14 +6,38 @@
 		<title>Restaurant Page</title>
 	</head>
 	<body>
-		<header>
-			<nav class="navbar">
-				<button type="button" id="home-button">Home</button>
-				<button type="button" id="menu-button">Menu</button>
-				<button type="button" id="about-button">About</button>
-			</nav>
-		</header>
-		<div id="content"></div>
-		<script src="main.js"></script>
+		<div id="root">
+			<header>
+				<nav class="navbar">
+					<div class="logo-container">
+						<img id="restaurant-logo" alt="Baratie" />
+						<h1>BARATIE</h1>
+					</div>
+					<div class="buttons-container">
+						<button type="button" class="button default menu">Menu</button>
+						<button type="button" class="button default home">Home</button>
+						<button type="button" class="button default about">About</button>
+					</div>
+				</nav>
+			</header>
+			<div id="content"></div>
+			<footer>
+				<ul>
+					<li>
+						<a href="https://github.com/Kahffi" target="_blank"
+							><img src="" alt="Github"
+						/></a>
+					</li>
+					<li>
+						<a href="https://www.theodinproject.com/" target="_blank"
+							><img src="" alt="TOP"
+						/></a>
+					</li>
+					<li>
+						<a href="" target="_blank"><img src="" alt="Youtube" /></a>
+					</li>
+				</ul>
+			</footer>
+		</div>
 	</body>
 </html>
